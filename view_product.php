@@ -448,16 +448,6 @@ footer p {
 <div class="top-nav">
   <div class="logo">Happy Sprays</div>
   <div class="nav-actions">
-    <!-- Cart Icon with Bubble -->
-    <a href="cart.php" class="cart-link" style="position:relative">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M6 7h12l1 12H5L6 7z"/>
-        <path d="M9 7V5a3 3 0 0 1 6 0v2"/>
-      </svg>
-      <span style="position:absolute; top:-8px; right:-8px; background:red; color:#fff; font-size:12px; font-weight:bold; width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center;">
-      <?= isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?>
-      </span>
-    </a>
 
     <!-- Profile Icon -->
     <?php
@@ -473,11 +463,12 @@ footer p {
   </div>
 </div>
 
+
 <div class="sub-nav" id="subNav">
     <a href="index.php">HOME</a>
     <a href="index.php?gender=Male">For Him</a>
     <a href="index.php?gender=Female">For Her</a>
-    <a href="reviews.php">REVIEWS</a>
+    <a href="contact.php">CONTACT</a>
 </div>
 
 <div class="back-btn-bar" id="backBtnBar">
